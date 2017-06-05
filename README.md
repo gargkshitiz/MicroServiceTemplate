@@ -21,7 +21,7 @@ This project demoes the following moving parts to be used for the development of
 
 Project details
 ----------------
-1. AccountsServer, the starting point 
+1. *AccountsServer*, the starting point 
 	* It starts the spring boot app.
 	* It starts an embedded tomcat server.
 	* Looks for accounts-server.properties file, in which we define app name, port number, eureka URL etc. 
@@ -32,19 +32,19 @@ Project details
 		* Database connectivity.  Searches for Property file classpath:database.properties, Looks for all the table entities through @EntityScan(com.org.fms.account.model), Looks for all the JPA repositories and queries etc. through @EnableJpaRepositories(com.org.fms.account.model)
 		* @RestController, @Services, @Components etc. by scanning packages under com.org.fms.account.
 		* A REST template for making REST calls
-2. AccountsController 
+2. *AccountsController* 
 	* Has a normal GET
 	* Has a GET, PUT and DELETE to demo caching techniques
 	* Has a GET to demo hysterix fallback mechanism
-3. CacheDemoService has service methods to demo caching techniques
-4. HysterixDemoService has service methods to demo hysterix fallback mechanism
-5. Account is the DB table equivalent
-6. AccountRepository class has all the DB queries embedded inside it, in the form of methods OR queries
-7. CacheConfig is used to configure Redis connection etc. It looks for redis.properties in the classpath
-8. DBConfig* is used to configure Redis connection etc. It looks for sql-server.properties in the classpath
-9. KafkaConfig* is used to configure Kafka 0.9.0.1 connection etc. It looks for kafka.properties in the classpath
-10. LogDocTrackConfig* configures swagger documentation, enables incoming request tracking, creates performance logs and adds request track id in logs. It looks for swagger.properties in the classpath. 
-11. logback.xml defines how service logs should be created.
+3. *CacheDemoService* has service methods to demo caching techniques
+4. *HysterixDemoService* has service methods to demo hysterix fallback mechanism
+5. *Account* is the DB table equivalent
+6. *AccountRepository* class has all the DB queries embedded inside it, in the form of methods OR queries
+7. *CacheConfig* is used to configure Redis connection etc. It looks for redis.properties in the classpath
+8. *DBConfig* is used to configure Redis connection etc. It looks for sql-server.properties in the classpath
+9. *KafkaConfig* is used to configure Kafka 0.9.0.1 connection etc. It looks for kafka.properties in the classpath
+10. *LogDocTrackConfig* configures swagger documentation, enables incoming request tracking, creates performance logs and adds request track id in logs. It looks for swagger.properties in the classpath. 
+11. *logback.xml* defines how service logs should be created.
 
 What to do when referencing this project
 -----------------------------------------
