@@ -6,6 +6,7 @@ This is a template project to create a micro service in a standardized manner. B
 
 Typically, a usual microservice has an architecture like this:
 
+![alt text](https://cloud.githubusercontent.com/assets/5894094/26773580/7d515ef2-49e9-11e7-91fa-c3f006b2ebc1.PNG)
 
 Project features
 -----------------
