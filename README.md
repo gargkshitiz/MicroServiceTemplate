@@ -29,10 +29,7 @@ Project details
   		* EurekaClient
     		* CircuitBreaker (Hysterix)
     		* Redis Caching
-    		* Database connectivity:
-    			* Searches for Property file classpath:database.properties
-			* Looks for all the table entities through @EntityScan(com.org.fms.account.model)
-			* Looks for all the JPA repositories and queries etc. through @EnableJpaRepositories(com.org.fms.account.model)
+    		* Database connectivity: Searches for Property file classpath:database.properties, Looks for all the table entities through @EntityScan(com.org.fms.account.model), Looks for all the JPA repositories and queries etc. through @EnableJpaRepositories(com.org.fms.account.model)
 		* @RestController, @Services, @Components etc. by scanning packages under com.org.fms.account.
 		* A REST template for making REST calls
 
