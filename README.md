@@ -22,20 +22,20 @@ This project demoes the following moving parts to be used for the development of
 Project details
 ----------------
 1. AccountsServer, the starting point 
-* It starts the spring boot app.
-* It starts an embedded tomcat server.
-* Looks for accounts-server.properties file, in which we define app name, port number, eureka URL etc. 
-* It enables
-	* EurekaClient
-	* CircuitBreaker (Hysterix)
-	* Redis Caching
-	* Database connectivity.  Searches for Property file classpath:database.properties, Looks for all the table entities through @EntityScan(com.org.fms.account.model), Looks for all the JPA repositories and queries etc. through @EnableJpaRepositories(com.org.fms.account.model)
-	* @RestController, @Services, @Components etc. by scanning packages under com.org.fms.account.
-	* A REST template for making REST calls
+	* It starts the spring boot app.
+	* It starts an embedded tomcat server.
+	* Looks for accounts-server.properties file, in which we define app name, port number, eureka URL etc. 
+	* It enables
+		* EurekaClient
+		* CircuitBreaker (Hysterix)
+		* Redis Caching
+		* Database connectivity.  Searches for Property file classpath:database.properties, Looks for all the table entities through @EntityScan(com.org.fms.account.model), Looks for all the JPA repositories and queries etc. through @EnableJpaRepositories(com.org.fms.account.model)
+		* @RestController, @Services, @Components etc. by scanning packages under com.org.fms.account.
+		* A REST template for making REST calls
 2. AccountsController 
-* Has a normal GET
-* Has a GET, PUT and DELETE to demo caching techniques
-* Has a GET to demo hysterix fallback mechanism
+	* Has a normal GET
+	* Has a GET, PUT and DELETE to demo caching techniques
+	* Has a GET to demo hysterix fallback mechanism
 3. CacheDemoService has service methods to demo caching techniques
 4. HysterixDemoService has service methods to demo hysterix fallback mechanism
 5. Account is the DB table equivalent
