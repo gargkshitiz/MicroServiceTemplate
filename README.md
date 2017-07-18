@@ -18,6 +18,7 @@ This project demoes the following moving parts to be used for the development of
 * Kafka client and consumer (service sends a message to kafka and also receives it using a listener. See /demoKafka endpoint)
 * Audit using AOP - client IP, Method arguments, Response value, response time , trackId  (exhibits all these using LogDocTrackConfig class)
 * Unit test case sample class AccountsControllerTest
+* Please note that the controller APIs are not RESTful as these are just for demo purpose.
 
 Project details
 ----------------
